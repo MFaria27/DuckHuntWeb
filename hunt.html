@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Duck Hunt</title>
+	<link rel="stylesheet" type="text/css" href="huntcss.css"> </link>
+</head>
+<body onload="graphicStart()" onclick >
+	<svg id = "gameboard" height="800" width="1000">
+		
+		<!-- Background (If clicked, one miss will be counted)v -->
+		<rect id= "back" onclick="addMiss()" width="1000" z-index = "999" height="600" style="fill:skyblue;" />		
+		
+		<!-- Duck One -->
+		<g onclick="shotDown();" id="d0" style="top:-1000px; left:-1000px; visibility:hidden;" width="125" height="125"> 
+			<image id="du0" width="120" height="120" x = "-1000" y = "-1000" xlink:href="bird.gif" />
+		</g> 
+
+		<!-- Duck Two -->
+		<g onclick="shotDown();" id="d1" style="top:-1000px; left:-1000px; visibility:hidden;" width="125" height="125"> 
+			<image id="du1" width="120" height="120" x = "-1000" y = "-1000" xlink:href="bird.gif" />
+		</g> 
+
+		<!-- Duck Three -->
+		<g onclick="shotDown();" id="d2" style="top:-1000px; left:-1000px; visibility:hidden;" width="125" height="125"> 
+			<image id="du2" width="120" height="120" x = "-1000" y = "-1000" xlink:href="bird.gif" />
+		</g> 
+
+		<!-- Duck Four -->
+		<g onclick="shotDown();" id="d3" style="top:-1000px; left:-1000px; visibility:hidden;" width="125" height="125"> 
+			<image id="du3" width="120" height="120" x = "-1000" y = "-1000" xlink:href="bird.gif" />
+		</g> 
+
+		<!-- Duck Five -->
+		<g onclick="shotDown();" id="d4" style="top:-1000px; left:-1000px; visibility:hidden;" width="125" height="125"> 
+			<image id="du4" width="120" height="120" x = "-1000" y = "-1000" xlink:href="bird.gif" />
+		</g> 
+
+		<!-- Duck Six -->
+		<g onclick="shotDown();" id="d5" style="top:-1000px; left:-1000px; visibility:hidden;" width="125" height="125"> 
+			<image id="du5" width="120" height="120" x = "-1000" y = "-1000" xlink:href="bird.gif" />
+		</g> 
+
+		<!-- Duck Seven -->
+		<g onclick="shotDown();" id="d6" style="top:-1000px; left:-1000px; visibility:hidden;" width="125" height="125"> 
+			<image id="du6" width="120" height="120" x = "-1000" y = "-1000" xlink:href="bird.gif" />
+		</g> 
+
+		<!-- Duck Eight -->
+		<g onclick="shotDown();" id="d7" style="top:-1000px; left:-1000px; visibility:hidden;" width="125" height="125"> 
+			<image id="du7" width="120" height="120" x = "-1000" y = "-1000" xlink:href="bird.gif" />
+		</g> 
+
+		<!-- Duck Nine -->
+		<g onclick="shotDown();" id="d8" style="top:-1000px; left:-1000px; visibility:hidden;" width="125" height="125"> 
+			<image id="du8" width="120" height="120" x = "-1000" y = "-1000" xlink:href="bird.gif" />
+		</g> 
+
+		<!-- Duck Ten -->
+		<g onclick="shotDown();" id="d9" style="top:-1000px; left:-1000px; visibility:hidden;" width="125" height="125"> 
+			<image id="du9" width="120" height="120" x = "-1000" y = "-1000" xlink:href="bird.gif" />
+		</g>  
+		
+		<!-- Explosion Gif (Same .gif for every duck, usability in check -->
+		<g id="e" style="top:-1000px; left:-1000px; visibility:hidden;">
+			<image id="eu" width="120" height="120" xlink:href="explo.png" />
+		</g>
+
+	</svg>
+	
+	<button onclick="start();" id="startButton"> Start </button>
+	<script type = "text/javascript" src = "huntjs.js"> </script>
+</body>
+</html> 
